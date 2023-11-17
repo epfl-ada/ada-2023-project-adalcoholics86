@@ -69,7 +69,7 @@ When the trip is designed, we organise some visits for the customers (in the bes
 
 ## Proposed timeline: 
 
-In this milestone P2, we were more focus about finding some interessant rankings for our customers. We finishd some of them (ratings, breweries/km^2, percentage of alcohol). For milestone P3 we will firstly work on the couple of other features mentioned above which, for the moste part, require to load the .txt file. It is also possible that we will implement new classements if new ideas come to us. We will also find good way to visualize every rankings (for instance using the world map plot that we used). And finally, we will work on the complementary informations about the trip (visits, local guide, ...).
+For milestone P3 we will firstly work on the couple of other features mentioned above which, for the moste part, require to load the .txt file. It is also possible that we will implement new classements if new ideas come to us. We will also find good way to visualize every rankings (for instance using the world map plot that we used). And finally, we will work on the complementary informations about the trip (visits, local guide, ...).
 
 ## Organization within the team: 
 
