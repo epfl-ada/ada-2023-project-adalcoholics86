@@ -11,8 +11,8 @@ What is the perfect trip depending on your beer preferences? Is there a common g
 
 ## Abstract:
 
-We are BTA (Beer Trip Agency SA) and we design beer tasting trips around the world taking into account our customers' preferences!
-To go into a bit more detail, with data from both sites, we're designing several trips around the world taking into account different parameters that might be relevant to our customers (% alcohol, top-rated beers, brewery diversity, ...). First, we'll rank the best places for each of these characteristics. Then, with all these rankings, we'll establish a general ranking that can be designed in relation to customer preferences, giving more or less weight to the initial rankings. Finally, once we've determined the regions that will make up the world tour, we'll propose brewery visits (the best) in each of them, along with the contacts of the region's best beer lovers/experts (the site's users).
+Been a rough few weeks, correcting 100 ADA stories. How will you celebrate? A few drinks? A holiday maybe? Why not both :-)  Welcome to BTA (Beer Trip Agency SA), where we design beer-tasting trips around the world taking into account our customers' preferences!
+Using the provided data, we design several trips (ITINIREies?) around the world, taking into account different parameters that might be relevant to our drunk-driven clients. We pick the best spots corresponding to characteristics such as alcohol percentage, top-rated beers, and brewery diversity among other things. Then, we establish a general ranking designed in relation to customer preferences, giving more or less weight to the initial ratings. Once our algorithm brews through, we determine the regions that will make up the world tour. We'll propose brewery visits in countries, along with the contacts of the region's best beer lovers/experts. Ale the best for a trip Lager than life!
 
 ## Additional datasets:
 
