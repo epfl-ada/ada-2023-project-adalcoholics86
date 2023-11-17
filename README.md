@@ -1,6 +1,6 @@
 ## Title:
 
-The beer trip agency. 
+The Beer Trip Agency (BTA). 
 
 ## Abstract:
 
