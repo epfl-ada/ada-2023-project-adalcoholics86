@@ -6,6 +6,7 @@ ada-2023-project-adalcoholics86 created by GitHub Classroom
 The beer trip agency. 
 
 ## Questions to answer:
+
 What is the perfect trip depending on your beer preferences? Is there a common ground for a group of people that don't share the same opinion about beer? If yes, where is the El Dorado?
 
 ## Abstract:
@@ -27,7 +28,6 @@ To go into a bit more detail, with data from both sites, we're designing several
 - Importing the additional datasets and cleaning them.
 - Merging the initial datasets and cleaning them to keep only the used parameters. 
  
-# Determine the amount of trips !!!!
 ### 2) Building the trips for every preferences: 
 
 - **The percentage of alcohol** (2 rankings, softest and strongest beers). The idea for this ranking is to consider the averaged percentage of alcohol in the beers from every location. This ranking is useful because it gave us the countries with the strongest beer and also the softest ! So this can be used for both customers perferences. 
@@ -59,17 +59,17 @@ Status : Not done yet, still in conception
 This list is not exhaustive, it shows only the idea we thought about yet, but it's possible that other classifications will be added, or that some of the previous ones will be deleted.
 
 ### 3) Computing the overall ranking: 
+
 With the weights given by customers preferences, we create the ranking that fits the most. 
 All previous rankings receive points (10pts for 1st, 1pts for the 10th), then we multiply those rankings with their respective weights and we sum the points for each location from all the ranking. Finally we can find the location with the most points (El Dorado) and the following ones to build the world trip. 
 
 ### 4) Complementary informations about the trip:
+
 When the trip is designed, we organise some visits for the customers (in the best breweries in each location) and we find a local guide that can give them advices on the location (in the users from the location)
 
-## Dump ideas: 
-
 ## Proposed timeline: 
-In this milestone P2, we were more focus about finding some interessant rankings for our customers. We finish some of them (ratings, breweries/km^2, percentage of alcohol), but we are still working on couple of other features for milestone P3
-##### Not sur that it is what we have to say here....!!!!
+
+In this milestone P2, we were more focus about finding some interessant rankings for our customers. We finishd some of them (ratings, breweries/km^2, percentage of alcohol). For milestone P3 we will firstly work on the couple of other features mentioned above which, for the moste part, require to load the .txt file. It is also possible that we will implement new classements if new ideas come to us. We will also find good way to visualize every rankings (for instance using the world map plot that we used). And finally, we will work on the complementary informations about the trip (visits, local guide, ...).
 
 ## Organization within the team: 
 
