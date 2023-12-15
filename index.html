@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTA</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="icon" href="images/favicon.jpg">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+        <div style="position: relative;">
+            <img src="images/beach-1869523_1280.jpg" alt="Header Image" style="width: 100%;">
+            <h1 style="position: absolute; top: 25%; left: 30%; transform: translate(-50%, -50%);"> THE BEER TRIP AGENCY </h1>
+        </div>
+    </header>
+    
+    </header>
+
+    <nav>
+        <!-- Navigation content goes here -->
+        <a href="#top" class="button">Home</a>
+        <a href="yourtrip" class="button">Your Trip</a>
+        
+    </nav>
+
+    <main>
+        <section>
+            <!-- Section content goes here -->
+            <h2> Welcome to the Beer Trip Agency! </h2>
+            <p>
+                Been a rough few weeks, correcting 100 ADA stories. How will you celebrate? A few drinks? A holiday maybe? 
+                Why not both :-) Welcome to BTA (Beer Trip Agency SA), where we design beer-tasting trips around the world taking 
+                into account our customers' preferences! Using the provided data, we design several trips around the world, 
+                taking into account different parameters that might be relevant to our drunk-driven clients. We pick the best 
+                spots corresponding to characteristics such as alcohol percentage, top-rated beers, and brewery diversity among 
+                other things. Then, we establish a general ranking designed in relation to customer preferences, giving more or 
+                less weight to the initial ratings. Once our algorithm brews through, we determine the regions that will make up 
+                the world tour. We'll propose brewery visits in countries, along with the contacts of the region's best beer 
+                lovers/experts. Ale the best for a trip Lager than life!
+            </p>
+    
+        </section>    
+
+        <section>
+            <h2> Trip 1 : The Booze Odyssey </h2>
+            <h3> Discover the Globe's Softest and Strongest Brews! </h3>
+            <p>
+                For this ranking, we considered the average percentage of alcohol in beers for every locations. This ranking 
+                allows us to find the countries/locations with the strongest/softest beers. Whether you like 
+                strong or soft beers this ranking will satisfy any tastes
+            </p>
+            <img src="images/softest.png" width="45%">
+            <img src="images/strongest.png" width="45%">
+        </section>
+
+        <section>
+            <iframe src="plots/world_map.html" width="80%" height="600"></iframe>
+            <iframe src="plots/usa_map.html" width="80%" height="600"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script>
+        var data = [{
+            x: ['giraffes', 'orangutans', 'monkeys'],
+            y: [20, 14, 23],
+            type: 'bar'
+        }];
+
+        Plotly.newPlot('myDiv', data);
+    </script>
+</body>
+</html>

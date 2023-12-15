@@ -1,0 +1,101 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /*border: 5px solid orange;*/
+
+}
+
+/* Header styles */
+header {
+    /* background-color: #333; */
+    color: white;
+    padding: 20px; 
+    font-size: xx-large; 
+}
+
+h1 {
+    /*-webkit-text-stroke: 0.5px rgb(51, 134, 134);*/
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-shadow: 0.9px 0.9px rgb(51, 134, 134);
+}
+
+/* Navigation styles */
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+a:hover {
+    background-color: #555;
+    color : white;
+}
+
+
+/* Main content styles */
+main {
+    margin: 15px;
+    color: #333;
+    text-align: center;
+}
+
+
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Article styles */
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: larger;
+    line-height: 1.5;
+
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Image styles */
+img {
+    border-radius: 10px;
+}
