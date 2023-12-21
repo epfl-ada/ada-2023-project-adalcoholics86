@@ -1,3 +1,4 @@
+[Data_vizu](Data_vizu.ipynb)
 ## Title:
 
 The Beer Trip Agency (BTA). 
