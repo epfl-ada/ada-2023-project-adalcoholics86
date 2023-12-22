@@ -1,35 +1,38 @@
+## Link to the website
+
 
 ## Guide to run the code
 
-The data files are organized as follows:
+The data files are ordered as follows:
     project_root/
+project_root/
 |-- README.md
 |-- matched_beer_data/
-|   |-- beers.csv
-|   |-- breweries.csv
-|   |-- users.csv
-|   |-- ratings.csv
-|   |-- users_approx.csv
+| |-- beers.csv
+| |-- breweries.csv
+| |-- users.csv
+| |-- ratings.csv
+| |-- users_approx.csv
 |-- RateBeer/
-|   |-- beers.csv
-|   |-- breweries.csv
-|   |-- ratings.txt
-|   |-- users.csv
-|   |-- ratings_TTRB.csv
+| |-- beers.csv
+| |-- breweries.csv
+| |-- ratings.txt
+| |-- users.csv
+| |-- ratings_TTRB.csv
 |-- BeerAdvocate/
-|   |-- beers.csv
-|   |-- breweries.csv
-|   |-- users.csv
-|   |-- ratings.txt
-|   |-- ratings_TTBA.csv
-|   |-- preprocess_ratings.ipynb
+| |-- beers.csv
+| |-- breweries.csv
+| |-- users.csv
+| |-- ratings.txt
+| |-- ratings_TTBA.csv
+| |-- preprocess_ratings.ipynb
 |-- Data_visu.ipynb
 |-- milestoneP3.ipynb
 
  - Note that ratings_TTRB.csv and ratings_TTBA.csv are file created from the two ratings.txt files respectively from RateBeer and BeerAdvocate. We create these two files  by preprocessing them in the `preprocess_ratings.ipynb` files. Thus, it is important to run `preprocess_ratings.ipynb` before `Data_visu.ipynb` and `milestoneP3.ipynb`. (Note that the preprocessing of the two files takes approximately 4 hours).
  - The external Datasets we are talking aobut in **Step 1** are directly downloaded in the 'milestoneP3.ipynb' notebook from these websites: [USA_states_area](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area), [Countries_area](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area), [population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population), [population_usa](https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population) and two small handmade datasets with respectively the populations and area of every countries of the UK.
  - `Data_visu.ipynb` file contains several different way to visualize our different dataset which helped us design the trips mentioned in **Step 4** but also contains all the ranking visualization from trips we did not consider relevant for customers or the ones that we had imagined but that the available dataset did not allows us to realize. 
- - `milestoneP3.ipynb` contains the code for milestoneP3. 
+ - `milestoneP3.ipynb` contains the code for milestoneP3. Some of the cells still display warnings while running. however, this don't cause any issue for executing the notebook. 
  - Note that not every cells of the `milestoneP3.ipynb` notebook put on github has been previously run (the full prerin `milestoneP3.ipynb` was too heavy for github).
 
 ### Title:
