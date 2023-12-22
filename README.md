@@ -4,7 +4,7 @@
 ## Guide to run the code
 
 The data files are ordered as follows:
-    project_root/
+```
 project_root/
 |-- README.md
 |-- matched_beer_data/
@@ -25,9 +25,10 @@ project_root/
 | |-- users.csv
 | |-- ratings.txt
 | |-- ratings_TTBA.csv
-| |-- preprocess_ratings.ipynb
+|-- preprocess_ratings.ipynb
 |-- Data_visu.ipynb
 |-- milestoneP3.ipynb
+```
 
  - Note that ratings_TTRB.csv and ratings_TTBA.csv are file created from the two ratings.txt files respectively from RateBeer and BeerAdvocate. We create these two files  by preprocessing them in the `preprocess_ratings.ipynb` files. Thus, it is important to run `preprocess_ratings.ipynb` before `Data_visu.ipynb` and `milestoneP3.ipynb`. (Note that the preprocessing of the two files takes approximately 4 hours).
  - The external Datasets we are talking aobut in **Step 1** are directly downloaded in the 'milestoneP3.ipynb' notebook from these websites: [USA_states_area](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area), [Countries_area](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area), [population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population), [population_usa](https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population) and two small handmade datasets with respectively the populations and area of every countries of the UK.
