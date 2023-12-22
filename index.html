@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTA</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="icon" href="images/favicon.jpg">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+        <div class="header-img">
+            <img src="images/beach.jpg" class="rounded" alt="Header Image" style="width: 100%;">
+            <h1 id="top-header"> BTA </h1>
+            
+            <hr class="header-line"></hr>
+            <h2 id="second-header"> The Beer Trip Agency </h2>
+        </div>
+    </header>
+    <nav>
+        <!-- Navigation content goes here -->
+        <div class="navbar">
+            <a href="#intro"> Intro <i class="fa fa-caret-down"></i></a>
+            <div class="subnav">
+              <button class="subnavbtn"> Trips <i class="fa fa-caret-down"></i> </button>
+              <div class="subnav-content">
+                <a href="trips.html#trip8">Mohammad</a>
+                <a href="trips.html#trip7">Tim</a>
+                <a href="trips.html#trip6">Beatriz</a>
+                <a href="trips.html#trip5">Martin</a>
+                <a href="trips.html#trip4">Manoel</a>
+                <a href="trips.html#trip3">Akhil</a>
+                <a href="trips.html#trip2">Bob</a>
+                <a href="trips.html#trip1">Marija</a>
+              </div>
+            </div>
+            <a href="story.html#story"> Story <i class="fa fa-caret-down"></i></a>
+            <a href="ethics.html#ethics"> BTA ethics <i class="fa fa-caret-down"></i></a>
+        </div>  
+        
+    </nav>
+
+    <main>
+
+        <!-- intro -->
+
+        <section class="introo">
+            <h2 id="intro"> Welcome to the Beer Trip Agency! </h2>
+
+               <p class="description1">
+                🍻 Greetings, beer lovers! 🌍✈️
+               </p>
+               <p class="description">
+                Get ready for a frothy escapade with BTA - Biere Trip Agency, where your taste buds embark on a world tour, 
+                guided by insights from the renowned beer enthusiasts at RateBeer and BeerAdvocate!! 🚀 
+                <br>
+                <br>
+                🌐 Envision this : A journey that spans borders, cultures, and continents, all in the pursuit of the gold 
+                liquid – BEER! 🍺 Thanks to our collaboration with the legendary RateBeer and BeerAdvocate communities, 
+                our hop-centric expeditions will take you sipping saisons in Belgium, clinking steins in Germany, and grooving
+                with IPAs in the USA. It's not just a trip; it's a taste odyssey, where each pour narrates a story, and every
+                brewery is a chapter recommended by the discerning palates of RateBeer and BeerAdvocate.
+                <br>
+                <br>
+                🍻 BTA isn't just a travel agency; we're your companions in beerventures, dedicated to transforming every 
+                trip into a sudsy spectacle, fueled by top-notch recommendations and reviews from RateBeer and BeerAdvocate. 
+                Our specialty: designing your trip, and when we say your trip, we mean a trip fully organized based on your 
+                personal criteria! So, hop on board, grab your passport, your pint glass and let's toast to the world of beer 
+                exploration, guided by the knowledge of RateBeer and BeerAdvocate! These two remarkable websites have earned our 
+                unwavering trust, and, based on our analysis, we hold them in equally high regard, a sentiment reflected in the 
+                compelling graphs presented below:
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <iframe class = "plot-center" src="plots/intro_ccdf_comparaison.html"></iframe>
+                <h4>CDF of standardised user scores from Rate Beer and Beer Advocate</h4>
+
+            </div>
+            <br>
+            <p >
+                This plot shows the CDF of each website. By simply looking at it, we can make the hypothesis that BeerAdvocate 
+                users tend to give higher z_score than RateBeer users. We will test this hypothesis later on.
+            </p>
+            <br>
+            <div>
+                <iframe class = "double-plots-left" src="plots/intro_zscore_vs_nbr_ratings_BA_99.html"></iframe>
+                <iframe class = "double-plots-right" src="plots/intro_zscore_vs_nbr_ratings_RB_99.html"></iframe>
+                <h4>Scatterplots of number of ratings vs scores for both websites</h4>
+            </div>
+            <br>
+            <p>
+                These two plots give us a way to visualize the zscore distribution of the 1% of the most reviewed beers from 
+                both sites. It also gives us an idea of the number of times that the most-rated beers are reviewed.
+            <br>   
+            <br>
+                After graphing the data and analyzing it a little in the previous graphs, certain hypotheses need to be tested 
+                so that they can be used correctly in the future. Indeed we are trying different tests to see if the z_score 
+                distribution of the beers from the two websites are directly comparable.
+            <br>
+            <br>
+                The ccdf plot gave us the intuition that the z_score distribution of the beers from the two websites is not 
+                directly comparable. We tried to confirm this intuition by doing two different hypothesis tests that we thought 
+                were well suited to test our hypothesis. We first computed a permutation test which randomly shuffled the data 
+                from the two different datasets and evaluate if the difference of z_score distribution is significant. The test 
+                gave us a p-value of 0.0 which confirms our initial intuition that there is a significant difference between the 
+                two distributions. 
+                To be sure, we also tried to do a Kolmogorov-Smirnov test which gave us a p-value of 1.16e-24 which also confirmed our intuition.
+
+            </p>
+            <br>
+            <div>
+                <iframe class = "double-plots-right" src="plots/intro_review_per_year.html"></iframe>
+                <iframe class = "double-plots-left" src="plots/fig_intro_proportion.html"></iframe>
+                <h4>Comparing review numbers between the sites (left) and unique beers between the sites (right)</h4>
+
+            </div>
+            <p>
+                The first plot shows the difference in the number of reviews year by year of the two websites. We can see that 
+                while the number of reviews of both sites is increasing before 2014-2015, BeerAdvocate tend to grow faster than 
+                (or has more active users) than RateBeer. We can also observe that both sites decreased in the number of reviews 
+                after 2015. 
+                <br>
+                The number of reviews in 2017 for both sites is particularly low, this could be due to the fact that the dataset 
+                may have been collected during 2017 and that the number of reviews of 2017 is not complete.
+                <br>
+                <br>
+                The second plot shows the proportion of beer present on both websites versus the proportion of beer present on only one 
+                of the two websites. We can see that the majority of the beer is present on both websites, which allows us to work 
+                directly with matched files without "losing" too much data.
+            </p>
+            
+            <br>
+            <hr style="border-top: 1px solid #333; width: 50%;"></hr>
+            <br>
+            <p>
+                Wow, we already have some customers interested! Nice to meet you Bob, Beatriz, Akhil, Manouel, Marija, 
+                Martin, Tim and Mohammad. Tell us about your story… What are you doing in your life?  Oh, we see, so you 
+                are responsible for training tomorrow's data scientists? And what exactly does it involve? Wait, WHAAAAT ?! 
+                122 projects to correct! Oh my god, you guys must be exhausted after such hard work, you've probably been 
+                wanting to take a break and travel for a while.
+                <br>
+                <br>
+                All right, buckle up as we dive into<a href="trips.html#trip1">individual preferences!</a>Let's take it step by step and discover what 
+                each beer enthusiast savors on their hop-filled journey!!
+                
+            </p>
+
+
+        </section>
+
+
+        
+
+    </main>
+
+    <footer>
+        <div class="github-links">
+            <a href="https://github.com/epfl-ada/ada-2023-project-adalcoholics86"> <img src="images/github_logo.png" alt="github" width="50px"> </a>
+        </div>
+
+        <div class="team-members">
+            <p> Max Carvalho - Luan Dinarica - Niko Pindao - Maé Rollin - Nicolas Vuillod </p>
+            <p> Beer Trip Agency • 2023</p>
+        </div>
+        <div class="epfl-logo">
+            <img src="images/epfl.png" alt="epfl" width="100px">
+        </div>
+    </footer>
+</body>
+</html>
