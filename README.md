@@ -1,5 +1,5 @@
 ## Link to the website
-
+[Link_to_the_data_story]()
 
 ## Guide to run the code
 
@@ -33,8 +33,9 @@ project_root/
  - Note that ratings_TTRB.csv and ratings_TTBA.csv are file created from the two ratings.txt files respectively from RateBeer and BeerAdvocate. We create these two files  by preprocessing them in the `preprocess_ratings.ipynb` files. Thus, it is important to run `preprocess_ratings.ipynb` before `Data_visu.ipynb` and `milestoneP3.ipynb`. (Note that the preprocessing of the two files takes approximately 4 hours).
  - The external Datasets we are talking aobut in **Step 1** are directly downloaded in the 'milestoneP3.ipynb' notebook from these websites: [USA_states_area](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area), [Countries_area](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area), [population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population), [population_usa](https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population) and two small handmade datasets with respectively the populations and area of every countries of the UK.
  - `Data_visu.ipynb` file contains several different way to visualize our different dataset which helped us design the trips mentioned in **Step 4** but also contains all the ranking visualization from trips we did not consider relevant for customers or the ones that we had imagined but that the available dataset did not allows us to realize. 
- - `milestoneP3.ipynb` contains the code for milestoneP3. Some of the cells still display warnings while running. however, this don't cause any issue for executing the notebook. 
- - Note that not every cells of the `milestoneP3.ipynb` notebook put on github has been previously run (the full prerin `milestoneP3.ipynb` was too heavy for github).
+ - `milestoneP3.ipynb` contains the code for milestoneP3. Some of the cells still display warnings while running. However, this don't cause any issue for executing the notebook. 
+ - Note that not every cells of the `milestoneP3.ipynb` notebook put on github has been previously run (the full prerun `milestoneP3.ipynb` was too heavy for github). We decided not to run any cells used to plot an interactive map (see **Step 5:**)
+ - Note that the plot doesn't render on github; you have to download the `milestoneP3.ipynb` and load it on your computer. Then you will be able to see the every plots except for the interactive map ones that we couldn't prerun because it was too heavy to put on the github.
 
 ### Title:
 
@@ -94,7 +95,7 @@ For the **The connoisseur tour**, we decided to use the files from Beer Advocate
 
 ### 3) Computing the overall ranking: 
 
-**Step 5:** While trying to build the different trips, we also tried to find a way to visualize the different destinations of every trip. To do so, we used plotly python library to plot the different locations on an interactive world map. We found this library perfectly suitted for our data analysis because it allowed us show both the locations of every country of the trip and their position in the ranking (the size of the circle on the interactive map depends on the location's ranking). We also used the plotly library to help us for visualizations included in the `Data_vizu.ipynb` notebook. Note that the interactive world map are included but cannot be visualized on github, but can be visualized directly by opening and running the `milestoneP3.ipynb` and `Data_vizu.ipynb`notebook.
+**Step 5:** While trying to build the different trips, we also tried to find a way to visualize the different destinations of every trip. To do so, we used plotly python library to plot the different locations on an interactive world map. We found this library perfectly suitted for our data analysis because it allowed us show both the locations of every country of the trip and their position in the ranking (the size of the circle on the interactive map depends on the location's ranking). We also used the plotly library to help us for visualizations included in the `Data_vizu.ipynb` notebook. Note that the notebook cells responsible to plot interactive world map are not prerun in github (if we ran every cells, the ipynb file would be too heavy to be put on github). The interactive map can be visualized  by running the `milestoneP3.ipynb` (do not forget to run beforehead the `preprocess_ratings.ipynb`, which take approximately 4 hours!).
 
 **Step 6:** In order to give customer a way to customize their trip, we decided to create a personal ranking. The idea is to give weights to the different rankings we created in the previous step. The weights are given by the customers depending on their preferences. All the previous rankings will receive points (10pts for 1st, 1pts for the 10th) which will be multiplied by their respective weights and summed for each location. Finally, we use this new personalized ranking to propose our customers a perfect final beer world tour according to their personal preference.
 
