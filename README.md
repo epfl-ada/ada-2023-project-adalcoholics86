@@ -107,7 +107,7 @@ For the **The connoisseur tour**, we decided to use the files from Beer Advocate
 
 ## Organization within the team: 
 
- - Niko Pindao: Explorations of the data, Data visualization for possible trips, Final text for data story.
+ - Niko Pindao: Explorations of the data, Data visualization for possible trips, overall_ranking, Final text for data story.
  - Max Carvalho: Explorations of the data, Interactive Map visualization, Web interface, Data visualization for possible trips, Final text for data story
  - Nicolas Vuillod: Explorations of the data, Data visualization for possible trips, Web interface, overall_ranking, guide finding, Final text for data story.
  - Mae Rollin: Explorations of the data, Web interface, Final text for data story.
